@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AdMod_basic_banner.MainPage"
+             xmlns:ads="clr-namespace:AdMod_basic_banner.Controls;assembly=AdMod_basic_banner"
+             >
+
+    <Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+            
+        </Grid.RowDefinitions>
+        <Label Text="Welcome to Xamarin.Forms!" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+            Grid.Row="0"/>
+        
+        <BoxView BackgroundColor="Blue" Grid.Row="1"/>
+        <ads:AdControlView BackgroundColor="Red" Grid.Row="2"/>
+    </Grid>
+    
+    
+        
+        
+    
+
+</ContentPage>
